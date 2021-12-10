@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotation>
+    <folder>NA</folder>
+    <filename>A5-4.jpg</filename>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>3072</width>
+        <height>2048</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>glue</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <occluded>0</occluded>
+        <bndbox>
+            <xmin>1824</xmin>
+            <ymin>1101</ymin>
+            <xmax>1974</xmax>
+            <ymax>1291</ymax>
+        </bndbox>
+    </object>
+</annotation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotation>
+    <folder>NA</folder>
+    <filename>A1-3.jpg</filename>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>3072</width>
+        <height>2048</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>glue</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <occluded>0</occluded>
+        <bndbox>
+            <xmin>1407</xmin>
+            <ymin>1313</ymin>
+            <xmax>1416</xmax>
+            <ymax>1327</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>glue</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <occluded>0</occluded>
+        <bndbox>
+            <xmin>1431</xmin>
+            <ymin>1358</ymin>
+            <xmax>1444</xmax>
+            <ymax>1373</ymax>
+        </bndbox>
+    </object>
+</annotation>

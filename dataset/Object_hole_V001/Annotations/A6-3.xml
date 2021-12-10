@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotation>
+    <folder>NA</folder>
+    <filename>A6-3.jpg</filename>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>3072</width>
+        <height>2048</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>Component</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <occluded>0</occluded>
+        <bndbox>
+            <xmin>736</xmin>
+            <ymin>860</ymin>
+            <xmax>2410</xmax>
+            <ymax>1475</ymax>
+        </bndbox>
+    </object>
+</annotation>

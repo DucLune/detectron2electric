@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotation>
+    <folder>NA</folder>
+    <filename>A9-1.jpg</filename>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>3072</width>
+        <height>2048</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>injection_hole</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <occluded>0</occluded>
+        <bndbox>
+            <xmin>948</xmin>
+            <ymin>1319</ymin>
+            <xmax>994</xmax>
+            <ymax>1389</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>injection_hole</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <occluded>0</occluded>
+        <bndbox>
+            <xmin>2174</xmin>
+            <ymin>1310</ymin>
+            <xmax>2226</xmax>
+            <ymax>1388</ymax>
+        </bndbox>
+    </object>
+</annotation>

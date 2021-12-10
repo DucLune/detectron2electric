@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotation>
+    <folder>NA</folder>
+    <filename>C5-5.jpg</filename>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>3072</width>
+        <height>2048</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>pin_inclined</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <occluded>0</occluded>
+        <bndbox>
+            <xmin>2058.0</xmin>
+            <ymin>859.0</ymin>
+            <xmax>2128.0</xmax>
+            <ymax>918.0</ymax>
+        </bndbox>
+    </object>
+</annotation>
