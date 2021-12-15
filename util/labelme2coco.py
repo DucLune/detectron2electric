@@ -24,18 +24,21 @@ class MyEncoder(json.JSONEncoder):
 
 
 class labelme2coco(object):
-    def __init__(self, labelme_json=[], save_json_path='./tran.json'):
+    def __init__(self, labelme_json=[], save_json_path='./tran.json',labels=[]):
         self.labelme_json = labelme_json
+        #print(len(self.labelme_json))
         self.save_json_path = save_json_path
         self.images = []
         self.categories = []
         self.annotations = []
-        # self.data_coco = {}
-        self.label = []
+        # self.data_coco = {}d
+        self.labels = []
         self.annID = 1
         self.height = 0
         self.width = 0
-
+        for label in labels:
+            self.categories.append(self.categorie(label))
+            self.labels.append(label)
         self.save_json()
 
     def data_transfer(self):
@@ -46,9 +49,8 @@ class labelme2coco(object):
                 self.images.append(self.image(data, num))
                 for shapes in data['shapes']:
                     label = shapes['label']
-                    if label not in self.label:
-                        self.categories.append(self.categorie(label))
-                        self.label.append(label)
+                    if label not in self.labels:
+                        continue
                     points = shapes['points']  # 这里的point是用rectangle标注得到的，只有两个点，需要转成四个点
                     points.append([points[0][0], points[1][1]])
                     points.append([points[1][0], points[0][1]])
@@ -75,7 +77,7 @@ class labelme2coco(object):
     def categorie(self, label):
         categorie = {}
         categorie['supercategory'] = 'Cancer'
-        categorie['id'] = len(self.label) + 1  # 0 默认为背景
+        categorie['id'] = len(self.labels) + 1  # 0 默认为背景
         categorie['name'] = label
         return categorie
 
@@ -154,7 +156,12 @@ class labelme2coco(object):
 
 
 
-labelme_json = glob.glob(r'./*.json')
 # labelme_json=['./1.json']
 
-labelme2coco(labelme_json, '.\\instances_train2014.json')
+#import os
+#print(os.getcwd())
+#pth = os.path.join("Annotations","glue_pin_inclined_side_pin_glue_injection_hole_regular_part","*.json")
+#jsons = glob.glob(pth)
+#print(len(jsons))
+#labelme2coco(jsons, '.\\instances_train2014.json',['glue','injection_hole'])
+
