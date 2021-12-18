@@ -2,7 +2,7 @@
 import os
 import random
 import shutil
-import labelme2coco
+from util import labelme2coco
 import glob
 
 # %%
